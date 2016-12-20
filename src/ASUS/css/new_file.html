@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.box{
+				position: relative;				
+				height: 20px;
+				width: 500px;
+				border-bottom: 1px solid #000000;				
+			}
+			.bar1{
+				position:absolute;
+				left: 100px;
+				top: 15px;				
+				height: 5px;
+				width: 15px;
+				background: #00A8FF;
+			}
+			.line6{
+				position:absolute;
+				left: 0px;
+				top: 18px;				
+				height: 2px;
+				width: 10px;
+				background: #000;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box" id="box">	
+		<div class="line6" id="line6">
+			
+		</div>
+		<div class="bar1" id="bar1">
+			
+		</div>
+		
+		</div>
+
+		
+		<script type="text/javascript">
+			var line6=document.getElementById('line6')
+			var box=document.getElementById('box')
+			var bar1=document.getElementById('bar1')
+/*			
+		function move(obj,json,fn) {
+	        clearInterval(obj.timer);
+	        var cur = 0;
+	        obj.timer = setInterval(function () {
+	            var isTrue = true;
+	            cur = parseInt(getStyle(obj,attr));
+	            speed = (json[attr] - cur)/8;
+	            speed = speed>0 ? Math.ceil(speed) : Math.floor(speed);                         
+	            console.log(isTrue)
+	            //等所有属性都到达目标值  再结束动画
+	            if(isTrue){
+	                clearInterval(obj.timer);
+	                fn && fn.call(obj);
+	            }
+	        },30
+    }
+*/    
+    function getStyle(obj,attr) {
+        return obj.currentStyle ? obj.currentStyle[attr] : getComputedStyle(obj,false)[attr];
+    }
+		alert(getStyle(bar1,background));
+		</script>
+	</body>
+</html>

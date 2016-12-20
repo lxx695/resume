@@ -1,0 +1,115 @@
+*{margin: 0;padding: 0;list-style: none;}
+a{text-decoration: none;}
+.fl{float: left;}
+.fr{float: right;}
+.clearfix:after{
+	height: 0;
+	content: '';
+	clear: both;
+	visibility: hidden;
+	display: block;
+}
+.clearfix{zoom: 1;}
+.box{
+	position: relative;
+	width: 1209px;
+	margin: 0 auto;
+}
+.bar1{
+	position: relative;
+	width: 500px;
+}
+.bar2{
+	position: absolute;
+	box-sizing: border-box;
+	height: 450px;
+	width: 400px;
+	right: 10px;
+	top: 200px;
+	border: 1px solid rgba(0,0,0,.5);
+	padding-left: 40px;
+}
+.ewm{
+	position: absolute;
+	top: 650px;
+	left: 50px;
+	width: 74px;
+	height: 74px;
+}
+.esite{
+	margin-top: 50px;
+}
+.h5{margin-top: 210px;
+	margin-left: 135px;
+	font-size: 14px;
+	line-height: 25px;
+	color: #333333;
+	
+}
+.h6{margin-top: -22px;
+	margin-left: 310px;
+	color: #ff6405;
+	font-size: 14px;
+}
+.title{
+	position: absolute;
+	right: 30px;
+	top: 20px;
+	font-size: 18px;
+	color: #333333;
+}
+.h1{
+	font-size: 15px;
+	color: #666666;
+	margin-right: 10px;
+	margin-top: 92px;
+}
+.register{
+	margin-top: 80px;
+	height: 36px;
+	width: 256px;
+}
+.h2{
+	font-size: 15px;
+	color: #666666;
+	margin-right: 10px;
+	margin-top: 45px;
+}
+.password{
+	height: 36px;
+	width: 256px;
+	margin-top: 30px;
+}
+.gou{
+	margin-top: 63px;
+	margin-right: 5px;
+}
+.check{
+	margin-top: 60px;
+}
+.h3{
+	margin-left: 84px;
+	margin-top: 60px;
+	color: #1966b6;
+}
+.fenge,.h4{
+	margin-top: 60px;
+}
+.h4{color: #1966b6;}
+.fenge{color: #876687;}
+.denglu{
+	margin-top: 150px;
+	width: 320px;
+	height: 45px;	
+	background: #ff5400;
+}
+.denglu:hover{
+	cursor: pointer;
+}
+.h7{
+	display: block;
+	font-size: 15px;
+	color: #fff;
+	line-height: 45px;
+	text-align: center;
+}
